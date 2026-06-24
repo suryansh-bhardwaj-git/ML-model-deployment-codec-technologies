@@ -2,10 +2,9 @@ Cloud-Based Machine Learning Model Deployment
 
 Overview
 
-This project demonstrates how a Machine Learning model can be deployed as a cloud-based REST API. The application uses the Iris Flower Dataset and predicts the flower species based on user input.
+This project demonstrates the deployment of a Machine Learning model as a cloud-hosted REST API. The application uses the Iris Flower Dataset and predicts the flower species based on the input measurements provided by the user.
 
-The model is trained using Scikit-Learn and served through a Flask API. Once deployed to the cloud, users can access the prediction service from anywhere using an internet connection.
-
+The model is built using Scikit-Learn and deployed using Flask on Render Cloud.
 
 Technologies Used
 
@@ -13,70 +12,40 @@ Technologies Used
 - Flask
 - Scikit-Learn
 - Joblib
-- Render / AWS
+- Render
 
+Live Demo
 
-How It Works
+https://ml-model-deployment-codec-technologies.onrender.com
 
-1. Load the Iris dataset.
-2. Train a Random Forest Classifier model.
-3. Save the trained model.
-4. Create a Flask API.
-5. Send flower measurements to the API.
-6. Receive the predicted flower species.
+Features
 
+- Machine Learning model deployment
+- REST API for predictions
+- Cloud hosting using Render
+- Simple and beginner-friendly implementation
 
 Project Structure
 
-cloud-ml-project/
+ML-model-deployment-codec-technologies/
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
 
-
-Running the Project
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-Run the application:
-
-python app.py
-
-The API will start on:
-
-http://localhost:5000
-
-
 API Endpoint
 
-Predict Flower Species
+Home
 
-POST "/predict"
+GET /
 
-Sample Input:
-
-{
-  "sepal_length": 5.1,
-  "sepal_width": 3.5,
-  "petal_length": 1.4,
-  "petal_width": 0.2
-}
-
-Sample Output:
+Response:
 
 {
-  "prediction": "Setosa"
+  "project": "Cloud-Based ML Model Deployment",
+  "status": "Running"
 }
-
-
-Deployment
-
-The project can be deployed on cloud platforms such as Render, Railway, AWS, or Azure. After deployment, the API can be accessed through a public URL.
-
 
 Conclusion
 
-This project shows a simple example of deploying a Machine Learning model as a cloud service. It helps understand the basic concepts of machine learning, APIs, and cloud deployment.
+This project demonstrates the basic process of training, deploying, and hosting a Machine Learning model on the cloud. The deployed API can be accessed from anywhere using its public URL.
